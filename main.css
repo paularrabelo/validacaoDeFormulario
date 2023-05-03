@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+    color: rgb(73, 73, 156);
+}
+
+form {
+    margin-top: 30px;
+}
+
+input, textarea, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 50%;
+    border-color: rgb(49, 49, 119);
+    outline-color: rgb(49, 49, 119);
+    border-radius: 15px;
+}
+
+button {
+    background-color: rgb(49, 49, 119);
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color:rgba(49, 49, 119, 0.741);
+}
+
+.mensagem-sucesso {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.mensagem-erro {
+    font-size: 12px;
+    background-color: rgba(255, 0, 0, 0.736);
+    padding: 8px;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+    width: 50%;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    width: 300%
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
